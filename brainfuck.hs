@@ -69,8 +69,7 @@ next state = case currentInstr of
         | code state !! idx == ']' = -1
         | otherwise = 0
 
-helloWorld = "++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++.>+.+++++++..+++.>++.<<+++++++++++++++.>.+++.------.--------.>+.>."
-
 main :: IO ()
 main = do
-    run (initialState helloWorld)
+    input <- getLine
+    run (initialState input)
